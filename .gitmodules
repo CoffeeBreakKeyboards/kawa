@@ -1,3 +1,6 @@
 [submodule "kbd"]
 	path = kbd
 	url = https://github.com/foostan/kbd
+[submodule "Type-C.pretty"]
+	path = Type-C.pretty
+	url = git@github.com:ai03-2725/Type-C.pretty.git
