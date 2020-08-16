@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name kbd)(type Legacy)(uri /home/sofubi/Keyboards/PCB/kawa/kbd/library/kbd.lib)(options "")(descr ""))
   (lib (name Type-C)(type Legacy)(uri /home/sofubi/Keyboards/PCB/kawa/Type-C.pretty/Type-C.lib)(options "")(descr ""))
+  (lib (name keebio)(type Legacy)(uri /home/sofubi/Keyboards/PCB/kawa/keebio-components/keebio.lib)(options "")(descr ""))
 )
