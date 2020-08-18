@@ -1,0 +1,9 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"SW33";"RotaryEncoder_EC11";1;"Rotary_Encoder_Switch";;;
+2;"R2,R1";"R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical";2;"4.7k";;;
+3;"D32,D31,D30,D29,D28,D27,D26,D25,D24,D23,D22,D21,D20,D19,D18,D17,D16,D15,D14,D13,D12,D11,D10,D9,D8,D7,D6,D5,D4,D3,D2,D1";"D3_TH";32;"SOD_123";;;
+4;"U1";"ProMicro_v3.5";1;"ProMicro";;;
+5;"SW34";"ResetSW_1side";1;"SW_PUSH";;;
+6;"SW32,SW31";"MXOnly-2U-NoLED";2;"SW_PUSH";;;
+7;"SW6,SW30,SW29,SW28,SW27,SW26,SW25,SW24,SW23,SW22,SW21,SW20,SW19,SW18,SW17,SW16,SW15,SW14,SW13,SW12,SW11,SW10,SW9,SW8,SW7,SW5,SW4,SW3,SW2,SW1";"MXOnly-1U-NoLED";30;"SW_PUSH";;;
+8;"OL1";"OLED_1side";1;"OLED";;;

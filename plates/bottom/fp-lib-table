@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name kbd)(type KiCad)(uri /home/sofubi/Keyboards/PCB/kawa/pcb/kbd/kbd.pretty)(options "")(descr ""))
+)

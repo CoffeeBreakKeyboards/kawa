@@ -401,36 +401,19 @@ F 3 "" H 8500 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Rotary_Encoder SW33
-U 1 1 5F52AFFE
-P 4050 4050
-F 0 "SW33" V 3947 4280 50  0000 L CNN
-F 1 "Rotary_Encoder" V 4038 4280 50  0000 L CNN
-F 2 "Keebio-Parts:RotaryEncoder_EC11" H 3900 4210 50  0001 C CNN
-F 3 "~" H 4050 4310 50  0001 C CNN
-	1    4050 4050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0119
 U 1 1 5F58185D
-P 4050 4550
-F 0 "#PWR0119" H 4050 4300 50  0001 C CNN
-F 1 "GND" H 4055 4377 50  0000 C CNN
-F 2 "" H 4050 4550 50  0001 C CNN
-F 3 "" H 4050 4550 50  0001 C CNN
-	1    4050 4550
+P 4500 3600
+F 0 "#PWR0119" H 4500 3350 50  0001 C CNN
+F 1 "GND" H 4505 3427 50  0000 C CNN
+F 2 "" H 4500 3600 50  0001 C CNN
+F 3 "" H 4500 3600 50  0001 C CNN
+	1    4500 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 4350 4050 4550
-Wire Wire Line
-	3950 4350 3950 4450
-Wire Wire Line
-	4150 4350 4150 4450
-Text GLabel 3950 4450 3    50   Input ~ 0
+Text GLabel 4400 3400 3    50   Input ~ 0
 S0
-Text GLabel 4150 4450 3    50   Input ~ 0
+Text GLabel 4600 3400 3    50   Input ~ 0
 S1
 $Comp
 L Device:D_Small D11
@@ -865,7 +848,7 @@ Wire Wire Line
 	5150 1800 5150 2250
 Connection ~ 5150 2250
 Wire Wire Line
-	5150 2250 5150 2650
+	5150 2250 5150 2600
 Wire Wire Line
 	6000 1000 6000 1350
 Connection ~ 6000 1350
@@ -1026,15 +1009,15 @@ COL3
 Text GLabel 5150 1000 1    50   Input ~ 0
 COL4
 Text GLabel 6000 1000 1    50   Input ~ 0
-COL0
+COL5
 Text GLabel 6750 1000 1    50   Input ~ 0
-COL1
+COL6
 Text GLabel 7500 1000 1    50   Input ~ 0
-COL2
+COL7
 Text GLabel 8200 1000 1    50   Input ~ 0
-COL3
+COL8
 Text GLabel 8900 1000 1    50   Input ~ 0
-COL4
+COL9
 Text GLabel 1950 1700 3    50   Input ~ 0
 ROW0
 Text GLabel 1950 2150 3    50   Input ~ 0
@@ -1049,22 +1032,10 @@ Text GLabel 3750 1000 1    50   Input ~ 0
 COL2
 Text GLabel 1950 2550 3    50   Input ~ 0
 ROW2
-$Comp
-L kbd:ProMicro U1
-U 1 1 5FC404BB
-P 2450 5550
-F 0 "U1" H 2450 6587 60  0000 C CNN
-F 1 "ProMicro" H 2450 6481 60  0000 C CNN
-F 2 "kbd:ProMicro_v3.5" H 2550 4500 60  0001 C CNN
-F 3 "" H 2550 4500 60  0000 C CNN
-	1    2450 5550
-	1    0    0    -1  
-$EndComp
 Text GLabel 1750 4800 0    50   Input ~ 0
 S0
 Wire Wire Line
 	1750 5100 1750 5000
-Connection ~ 1750 5100
 $Comp
 L power:VCC #PWR0101
 U 1 1 5FCF5BA8
@@ -1125,65 +1096,158 @@ Text GLabel 2200 4150 0    50   Input ~ 0
 reset
 Text GLabel 1750 4900 0    50   Input ~ 0
 S1
-Text GLabel 3150 5500 2    50   Input ~ 0
-COL5
-Text GLabel 3150 5600 2    50   Input ~ 0
-COL6
-Text GLabel 3150 5700 2    50   Input ~ 0
-COL7
-Text GLabel 3150 5400 2    50   Input ~ 0
-COL4
-Text GLabel 3150 5300 2    50   Input ~ 0
-COL3
-Text GLabel 3150 5200 2    50   Input ~ 0
-COL2
-Text GLabel 1750 5900 0    50   Input ~ 0
-COL1
 Text GLabel 1750 5800 0    50   Input ~ 0
-COL0
+COL4
 Text GLabel 1750 5700 0    50   Input ~ 0
-ROW3
+COL3
 Text GLabel 1750 5600 0    50   Input ~ 0
-ROW2
+COL2
 Text GLabel 1750 5500 0    50   Input ~ 0
+COL1
+Text GLabel 1750 5400 0    50   Input ~ 0
+COL0
+Text GLabel 3150 5900 2    50   Input ~ 0
+ROW3
+Text GLabel 3150 5800 2    50   Input ~ 0
+ROW2
+Text GLabel 3150 5700 2    50   Input ~ 0
 ROW1
 Wire Wire Line
-	1450 5100 1750 5100
+	600  5100 1750 5100
 $Comp
 L power:GND #PWR0104
 U 1 1 5FCF2AAA
-P 1450 5100
-F 0 "#PWR0104" H 1450 4850 50  0001 C CNN
-F 1 "GND" H 1455 4927 50  0000 C CNN
-F 2 "" H 1450 5100 50  0001 C CNN
-F 3 "" H 1450 5100 50  0001 C CNN
-	1    1450 5100
+P 600 5100
+F 0 "#PWR0104" H 600 4850 50  0001 C CNN
+F 1 "GND" H 605 4927 50  0000 C CNN
+F 2 "" H 600 5100 50  0001 C CNN
+F 3 "" H 600 5100 50  0001 C CNN
+	1    600  5100
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 5400 0    50   Input ~ 0
+Text GLabel 1750 5900 0    50   Input ~ 0
 ROW0
-Text GLabel 1750 5300 0    50   Input ~ 0
+Text GLabel 1150 5300 0    50   Input ~ 0
 SCL
-Text GLabel 1750 5200 0    50   Input ~ 0
+Text GLabel 1150 5200 0    50   Input ~ 0
 SDA
-Text GLabel 3150 5800 2    50   Input ~ 0
-COL8
-Text GLabel 3150 5900 2    50   Input ~ 0
-COL9
 Wire Wire Line
 	6600 2950 5750 2950
 Connection ~ 5750 2950
 Wire Wire Line
-	5750 2950 5100 2950
+	5750 2950 5200 2950
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0105
 U 1 1 5FE47AAE
 P 1750 3350
-F 0 "#PWR?" H 1750 3200 50  0001 C CNN
+F 0 "#PWR0105" H 1750 3200 50  0001 C CNN
 F 1 "VCC" H 1767 3523 50  0000 C CNN
 F 2 "" H 1750 3350 50  0001 C CNN
 F 3 "" H 1750 3350 50  0001 C CNN
 	1    1750 3350
 	1    0    0    -1  
 $EndComp
+Connection ~ 1750 5100
+$Comp
+L kbd:ProMicro U1
+U 1 1 5FC404BB
+P 2450 5550
+F 0 "U1" H 2450 6587 60  0000 C CNN
+F 1 "ProMicro" H 2450 6481 60  0000 C CNN
+F 2 "kbd:ProMicro_v3.5" H 2550 4500 60  0001 C CNN
+F 3 "" H 2550 4500 60  0000 C CNN
+	1    2450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5200 1300 5200
+Wire Wire Line
+	1750 5300 1400 5300
+$Comp
+L Device:R_Small R2
+U 1 1 5F41A124
+P 1400 4650
+F 0 "R2" H 1459 4696 50  0000 L CNN
+F 1 "4.7k" H 1459 4605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 1400 4650 50  0001 C CNN
+F 3 "~" H 1400 4650 50  0001 C CNN
+	1    1400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5F41AE74
+P 1300 4400
+F 0 "R1" H 1241 4354 50  0000 R CNN
+F 1 "4.7k" H 1241 4445 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 1300 4400 50  0001 C CNN
+F 3 "~" H 1300 4400 50  0001 C CNN
+	1    1300 4400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1300 5200 1300 4500
+Connection ~ 1300 5200
+Wire Wire Line
+	1300 5200 1750 5200
+Wire Wire Line
+	1400 5300 1400 4750
+Connection ~ 1400 5300
+Wire Wire Line
+	1400 5300 1150 5300
+$Comp
+L power:VCC #PWR0106
+U 1 1 5F45E4F1
+P 1100 4300
+F 0 "#PWR0106" H 1100 4150 50  0001 C CNN
+F 1 "VCC" H 1117 4473 50  0000 C CNN
+F 2 "" H 1100 4300 50  0001 C CNN
+F 3 "" H 1100 4300 50  0001 C CNN
+	1    1100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4300 1300 4300
+Connection ~ 1300 4300
+Wire Wire Line
+	1300 4300 1400 4300
+Wire Wire Line
+	1400 4300 1400 4550
+Text GLabel 3150 5200 2    50   Input ~ 0
+COL5
+Text GLabel 3150 5300 2    50   Input ~ 0
+COL6
+Text GLabel 3150 5400 2    50   Input ~ 0
+COL7
+Text GLabel 3150 5500 2    50   Input ~ 0
+COL8
+Text GLabel 3150 5600 2    50   Input ~ 0
+COL9
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5F50E358
+P 4500 3100
+F 0 "SW?" V 4546 2870 50  0000 R CNN
+F 1 "Rotary_Encoder_Switch" V 4455 2870 50  0000 R CNN
+F 2 "" H 4350 3260 50  0001 C CNN
+F 3 "~" H 4500 3360 50  0001 C CNN
+	1    4500 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3400 4500 3600
+Wire Wire Line
+	4600 2800 5200 2800
+Wire Wire Line
+	5200 2800 5200 2950
+Connection ~ 5200 2950
+Wire Wire Line
+	5200 2950 5100 2950
+Wire Wire Line
+	4400 2800 4400 2600
+Wire Wire Line
+	4400 2600 5150 2600
+Connection ~ 5150 2600
+Wire Wire Line
+	5150 2600 5150 2650
 $EndSCHEMATC
