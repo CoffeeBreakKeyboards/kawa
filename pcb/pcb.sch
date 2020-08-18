@@ -1026,15 +1026,15 @@ COL3
 Text GLabel 5150 1000 1    50   Input ~ 0
 COL4
 Text GLabel 6000 1000 1    50   Input ~ 0
-COL5
+COL0
 Text GLabel 6750 1000 1    50   Input ~ 0
-COL6
+COL1
 Text GLabel 7500 1000 1    50   Input ~ 0
-COL7
+COL2
 Text GLabel 8200 1000 1    50   Input ~ 0
-COL8
+COL3
 Text GLabel 8900 1000 1    50   Input ~ 0
-COL9
+COL4
 Text GLabel 1950 1700 3    50   Input ~ 0
 ROW0
 Text GLabel 1950 2150 3    50   Input ~ 0
@@ -1060,7 +1060,7 @@ F 3 "" H 2550 4500 60  0000 C CNN
 	1    2450 5550
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 4800 0    50   Input ~ 0
+Text GLabel 1750 5800 0    50   Input ~ 0
 S0
 Wire Wire Line
 	1750 5100 1750 5000
@@ -1123,23 +1123,17 @@ Wire Wire Line
 	2800 4150 3000 4150
 Text GLabel 2200 4150 0    50   Input ~ 0
 reset
-Text GLabel 1750 4900 0    50   Input ~ 0
-S1
-Text GLabel 3150 5500 2    50   Input ~ 0
-COL5
-Text GLabel 3150 5600 2    50   Input ~ 0
-COL6
-Text GLabel 3150 5700 2    50   Input ~ 0
-COL7
-Text GLabel 3150 5400 2    50   Input ~ 0
-COL4
-Text GLabel 3150 5300 2    50   Input ~ 0
-COL3
-Text GLabel 3150 5200 2    50   Input ~ 0
-COL2
 Text GLabel 1750 5900 0    50   Input ~ 0
+S1
+Text GLabel 3150 5600 2    50   Input ~ 0
+COL4
+Text GLabel 3150 5500 2    50   Input ~ 0
+COL3
+Text GLabel 3150 5400 2    50   Input ~ 0
+COL2
+Text GLabel 3150 5300 2    50   Input ~ 0
 COL1
-Text GLabel 1750 5800 0    50   Input ~ 0
+Text GLabel 3150 5200 2    50   Input ~ 0
 COL0
 Text GLabel 1750 5700 0    50   Input ~ 0
 ROW3
@@ -1166,10 +1160,6 @@ Text GLabel 1750 5300 0    50   Input ~ 0
 SCL
 Text GLabel 1750 5200 0    50   Input ~ 0
 SDA
-Text GLabel 3150 5800 2    50   Input ~ 0
-COL8
-Text GLabel 3150 5900 2    50   Input ~ 0
-COL9
 Wire Wire Line
 	6600 2950 5750 2950
 Connection ~ 5750 2950

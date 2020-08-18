@@ -38,17 +38,6 @@ F 3 "" H 1750 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 3500 2550 3500
-$Comp
-L power:+5V #PWR0116
-U 1 1 5F458413
-P 1750 3350
-F 0 "#PWR0116" H 1750 3200 50  0001 C CNN
-F 1 "+5V" H 1765 3523 50  0000 C CNN
-F 2 "" H 1750 3350 50  0001 C CNN
-F 3 "" H 1750 3350 50  0001 C CNN
-	1    1750 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 3350 1750 3350
 Text GLabel 2150 3200 0    50   Input ~ 0
@@ -1037,15 +1026,15 @@ COL3
 Text GLabel 5150 1000 1    50   Input ~ 0
 COL4
 Text GLabel 6000 1000 1    50   Input ~ 0
-COL5
+COL0
 Text GLabel 6750 1000 1    50   Input ~ 0
-COL6
+COL1
 Text GLabel 7500 1000 1    50   Input ~ 0
-COL7
+COL2
 Text GLabel 8200 1000 1    50   Input ~ 0
-COL8
+COL3
 Text GLabel 8900 1000 1    50   Input ~ 0
-COL9
+COL4
 Text GLabel 1950 1700 3    50   Input ~ 0
 ROW0
 Text GLabel 1950 2150 3    50   Input ~ 0
@@ -1186,4 +1175,15 @@ Wire Wire Line
 Connection ~ 5750 2950
 Wire Wire Line
 	5750 2950 5100 2950
+$Comp
+L power:VCC #PWR?
+U 1 1 5FE47AAE
+P 1750 3350
+F 0 "#PWR?" H 1750 3200 50  0001 C CNN
+F 1 "VCC" H 1767 3523 50  0000 C CNN
+F 2 "" H 1750 3350 50  0001 C CNN
+F 3 "" H 1750 3350 50  0001 C CNN
+	1    1750 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
