@@ -203,20 +203,6 @@ Wire Wire Line
 Connection ~ 6300 3750
 Wire Wire Line
 	6300 3750 6550 3750
-Connection ~ 9750 3050
-Connection ~ 10050 3050
-Connection ~ 9950 3050
-Connection ~ 9850 3050
-Wire Wire Line
-	10150 3050 10050 3050
-Wire Wire Line
-	10050 3050 9950 3050
-Wire Wire Line
-	9950 3050 9850 3050
-Wire Wire Line
-	9850 3050 9750 3050
-Wire Wire Line
-	9500 3050 9750 3050
 Text GLabel 9250 5150 0    50   Input ~ 0
 i2c_scl
 Text GLabel 9250 5250 0    50   Input ~ 0
@@ -227,8 +213,6 @@ Connection ~ 3700 1350
 Wire Wire Line
 	3700 1350 3700 1850
 Connection ~ 3700 1850
-Wire Wire Line
-	3700 1850 3700 1950
 Text GLabel 3700 2350 0    50   Input ~ 0
 col0
 Wire Wire Line
@@ -268,7 +252,7 @@ Wire Wire Line
 	6700 1350 6700 1850
 Connection ~ 6700 1850
 Wire Wire Line
-	6700 1850 6700 2300
+	6700 1850 6700 1950
 Connection ~ 6700 2300
 Wire Wire Line
 	6700 2300 6700 2550
@@ -302,7 +286,7 @@ Text GLabel 3000 1050 0    50   Input ~ 0
 row0
 Connection ~ 4300 1550
 Wire Wire Line
-	4300 1550 3000 1550
+	4300 1550 3200 1550
 Connection ~ 5050 1550
 Wire Wire Line
 	5050 1550 4300 1550
@@ -333,58 +317,12 @@ row2
 Text GLabel 3000 2500 0    50   Input ~ 0
 row3
 Wire Wire Line
-	3000 2500 3250 2500
-Wire Wire Line
 	3000 2050 4300 2050
-Wire Wire Line
-	3250 2500 3250 2350
-Wire Wire Line
-	3250 2150 2650 2150
-Connection ~ 3250 2500
-Wire Wire Line
-	3250 2500 7300 2500
-Wire Wire Line
-	2650 1950 3700 1950
-Connection ~ 3700 1950
-Wire Wire Line
-	3700 1950 3700 2350
 Wire Wire Line
 	1700 2050 2050 2050
 Text GLabel 2050 2150 0    50   Input ~ 0
 enc_a
 Text GLabel 2050 1950 0    50   Input ~ 0
-enc_b
-Text GLabel 9250 4350 0    50   Input ~ 0
-row0
-Text GLabel 9250 4450 0    50   Input ~ 0
-row1
-Text GLabel 9250 4550 0    50   Input ~ 0
-row2
-Text GLabel 9250 4650 0    50   Input ~ 0
-row3
-Text GLabel 10550 4350 2    50   Input ~ 0
-col0
-Text GLabel 10550 4450 2    50   Input ~ 0
-col1
-Text GLabel 10550 4550 2    50   Input ~ 0
-col2
-Text GLabel 10550 4650 2    50   Input ~ 0
-col3
-Text GLabel 10550 4750 2    50   Input ~ 0
-col4
-Text GLabel 10550 4850 2    50   Input ~ 0
-col5
-Text GLabel 10550 4950 2    50   Input ~ 0
-col6
-Text GLabel 10550 5050 2    50   Input ~ 0
-col7
-Text GLabel 10550 5150 2    50   Input ~ 0
-col8
-Text GLabel 10550 5250 2    50   Input ~ 0
-col9
-Text GLabel 9250 5350 0    50   Input ~ 0
-enc_a
-Text GLabel 9250 5450 0    50   Input ~ 0
 enc_b
 Wire Wire Line
 	7300 1050 8350 1050
@@ -480,21 +418,6 @@ Wire Wire Line
 NoConn ~ 1100 7150
 NoConn ~ 2000 6850
 NoConn ~ 2000 6750
-NoConn ~ 9250 5850
-NoConn ~ 9250 5750
-NoConn ~ 9250 5650
-NoConn ~ 9250 5550
-NoConn ~ 9250 5050
-NoConn ~ 9250 4950
-NoConn ~ 9250 4850
-NoConn ~ 9250 4750
-NoConn ~ 10550 5650
-NoConn ~ 10550 5750
-NoConn ~ 10550 5850
-NoConn ~ 9250 4150
-NoConn ~ 9250 3950
-NoConn ~ 9250 4050
-NoConn ~ 9250 3750
 Text GLabel 9250 3450 0    50   Input ~ 0
 BOOT0
 Text GLabel 9250 3250 0    50   Input ~ 0
@@ -503,32 +426,19 @@ Text GLabel 10550 5450 2    50   Input ~ 0
 D+
 Text GLabel 10550 5550 2    50   Input ~ 0
 D-
-NoConn ~ 10550 5350
 Wire Wire Line
 	2400 5950 2300 5950
-NoConn ~ 9250 3650
 Connection ~ 2600 4300
 Wire Wire Line
 	4200 4350 4200 4450
 Connection ~ 4200 4350
 Wire Wire Line
 	1400 1450 1400 1550
-Connection ~ 9850 6050
-Wire Wire Line
-	9850 6050 9750 6050
-Connection ~ 9950 6050
-Wire Wire Line
-	9950 6050 9850 6050
-Connection ~ 10050 6050
-Wire Wire Line
-	10050 6050 9950 6050
 Wire Wire Line
 	6550 4200 6400 4200
-Wire Wire Line
-	10050 6050 10300 6050
 Connection ~ 4250 3550
 $Comp
-L Device:Polyfuse F1
+L pcb-rescue:Polyfuse-Device F1
 U 1 1 5F56B4BB
 P 2250 5650
 F 0 "F1" V 2025 5650 50  0000 C CNN
@@ -539,7 +449,7 @@ F 3 "~" H 2250 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0113
+L pcb-rescue:GND-power #PWR0113
 U 1 1 5F815224
 P 2950 6350
 F 0 "#PWR0113" H 2950 6100 50  0001 C CNN
@@ -550,7 +460,7 @@ F 3 "" H 2950 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0122
+L pcb-rescue:+3.3V-power #PWR0122
 U 1 1 5F813ACF
 P 4500 6350
 F 0 "#PWR0122" H 4500 6200 50  0001 C CNN
@@ -561,7 +471,7 @@ F 3 "" H 4500 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L pcb-rescue:GND-power #PWR0102
 U 1 1 5F810E30
 P 10300 6050
 F 0 "#PWR0102" H 10300 5800 50  0001 C CNN
@@ -572,7 +482,7 @@ F 3 "" H 10300 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0111
+L pcb-rescue:GND-power #PWR0111
 U 1 1 5F65D487
 P 1400 7150
 F 0 "#PWR0111" H 1400 6900 50  0001 C CNN
@@ -583,7 +493,7 @@ F 3 "" H 1400 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L pcb-rescue:GND-power #PWR0110
 U 1 1 5F5EAC93
 P 4250 3550
 F 0 "#PWR0110" H 4250 3300 50  0001 C CNN
@@ -594,7 +504,7 @@ F 3 "" H 4250 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0121
+L pcb-rescue:GND-power #PWR0121
 U 1 1 5F7BA833
 P 2700 5650
 F 0 "#PWR0121" H 2700 5400 50  0001 C CNN
@@ -605,7 +515,7 @@ F 3 "" H 2700 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_TVS D36
+L pcb-rescue:D_TVS-Device D36
 U 1 1 5F7B9E49
 P 2550 5650
 F 0 "D36" H 2550 5867 50  0000 C CNN
@@ -616,7 +526,7 @@ F 3 "~" H 2550 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0116
+L pcb-rescue:+5V-power #PWR0116
 U 1 1 5F7AC46B
 P 2400 5650
 F 0 "#PWR0116" H 2400 5500 50  0001 C CNN
@@ -627,18 +537,7 @@ F 3 "" H 2400 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_ST_STM32F0:STM32F072CBTx U1
-U 1 1 5F50F3BB
-P 9950 4550
-F 0 "U1" H 9900 2961 50  0000 C CNN
-F 1 "STM32F072CBTx" H 9900 2870 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 9350 3150 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 9950 4550 50  0001 C CNN
-	1    9950 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
+L pcb-rescue:GND-power #PWR0105
 U 1 1 5F68AA8A
 P 1400 1550
 F 0 "#PWR0105" H 1400 1300 50  0001 C CNN
@@ -649,7 +548,7 @@ F 3 "" H 1400 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
+L pcb-rescue:GND-power #PWR0109
 U 1 1 5F66ACC8
 P 4200 4450
 F 0 "#PWR0109" H 4200 4200 50  0001 C CNN
@@ -660,7 +559,7 @@ F 3 "" H 4200 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
+L pcb-rescue:GND-power #PWR0103
 U 1 1 5F65C8A3
 P 2600 4300
 F 0 "#PWR0103" H 2600 4050 50  0001 C CNN
@@ -671,7 +570,7 @@ F 3 "" H 2600 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0112
+L pcb-rescue:GND-power #PWR0112
 U 1 1 5F52DA2C
 P 2400 5950
 F 0 "#PWR0112" H 2400 5700 50  0001 C CNN
@@ -682,7 +581,7 @@ F 3 "" H 2400 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0114
+L pcb-rescue:GND-power #PWR0114
 U 1 1 5F5F4996
 P 2500 5850
 F 0 "#PWR0114" H 2500 5600 50  0001 C CNN
@@ -704,7 +603,7 @@ F 3 "" H 8050 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D17
+L pcb-rescue:D_Small-Device D17
 U 1 1 5F769A24
 P 8350 950
 F 0 "D17" V 8396 880 50  0000 R CNN
@@ -715,7 +614,7 @@ F 3 "~" V 8350 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0120
+L pcb-rescue:GND-power #PWR0120
 U 1 1 5FB7B1DA
 P 1700 2050
 F 0 "#PWR0120" H 1700 1800 50  0001 C CNN
@@ -726,18 +625,7 @@ F 3 "" H 1700 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D33
-U 1 1 5FA3C57C
-P 3250 2250
-F 0 "D33" V 3296 2180 50  0000 R CNN
-F 1 "SOD_123" V 3205 2180 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 3250 2250 50  0001 C CNN
-F 3 "~" V 3250 2250 50  0001 C CNN
-	1    3250 2250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Rotary_Encoder_Switch SW34
+L pcb-rescue:Rotary_Encoder_Switch-Device SW34
 U 1 1 5FA3A85F
 P 2350 2050
 F 0 "SW34" H 2350 1683 50  0000 C CNN
@@ -748,7 +636,7 @@ F 3 "~" H 2350 2310 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:D_Small D32
+L pcb-rescue:D_Small-Device D32
 U 1 1 5F7A2DB3
 P 10950 1950
 F 0 "D32" V 10996 1880 50  0000 R CNN
@@ -770,7 +658,7 @@ F 3 "" H 10650 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D31
+L pcb-rescue:D_Small-Device D31
 U 1 1 5F7A2DA7
 P 10950 1450
 F 0 "D31" V 10996 1380 50  0000 R CNN
@@ -781,7 +669,7 @@ F 3 "~" V 10950 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D30
+L pcb-rescue:D_Small-Device D30
 U 1 1 5F7A2DA1
 P 10950 950
 F 0 "D30" V 10996 880 50  0000 R CNN
@@ -814,7 +702,7 @@ F 3 "" H 10650 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D29
+L pcb-rescue:D_Small-Device D29
 U 1 1 5F79E0C5
 P 10300 1950
 F 0 "D29" V 10346 1880 50  0000 R CNN
@@ -836,7 +724,7 @@ F 3 "" H 10000 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D28
+L pcb-rescue:D_Small-Device D28
 U 1 1 5F79E0B9
 P 10300 1450
 F 0 "D28" V 10346 1380 50  0000 R CNN
@@ -847,7 +735,7 @@ F 3 "~" V 10300 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D27
+L pcb-rescue:D_Small-Device D27
 U 1 1 5F79E0B3
 P 10300 950
 F 0 "D27" V 10346 880 50  0000 R CNN
@@ -880,7 +768,7 @@ F 3 "" H 10000 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D26
+L pcb-rescue:D_Small-Device D26
 U 1 1 5F7994B3
 P 9650 1950
 F 0 "D26" V 9696 1880 50  0000 R CNN
@@ -902,7 +790,7 @@ F 3 "" H 9350 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D25
+L pcb-rescue:D_Small-Device D25
 U 1 1 5F7994A7
 P 9650 1450
 F 0 "D25" V 9696 1380 50  0000 R CNN
@@ -913,7 +801,7 @@ F 3 "~" V 9650 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D24
+L pcb-rescue:D_Small-Device D24
 U 1 1 5F7994A1
 P 9650 950
 F 0 "D24" V 9696 880 50  0000 R CNN
@@ -946,7 +834,7 @@ F 3 "" H 9350 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D23
+L pcb-rescue:D_Small-Device D23
 U 1 1 5F793041
 P 9000 1950
 F 0 "D23" V 9046 1880 50  0000 R CNN
@@ -968,7 +856,7 @@ F 3 "" H 8700 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D22
+L pcb-rescue:D_Small-Device D22
 U 1 1 5F793035
 P 9000 1450
 F 0 "D22" V 9046 1380 50  0000 R CNN
@@ -979,7 +867,7 @@ F 3 "~" V 9000 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D21
+L pcb-rescue:D_Small-Device D21
 U 1 1 5F79302F
 P 9000 950
 F 0 "D21" V 9046 880 50  0000 R CNN
@@ -1012,7 +900,7 @@ F 3 "" H 8700 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D20
+L pcb-rescue:D_Small-Device D20
 U 1 1 5F770AF6
 P 8350 2400
 F 0 "D20" V 8396 2330 50  0000 R CNN
@@ -1023,7 +911,7 @@ F 3 "~" V 8350 2400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D19
+L pcb-rescue:D_Small-Device D19
 U 1 1 5F770AF0
 P 8350 1950
 F 0 "D19" V 8396 1880 50  0000 R CNN
@@ -1056,7 +944,7 @@ F 3 "" H 8050 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D18
+L pcb-rescue:D_Small-Device D18
 U 1 1 5F769E65
 P 8350 1450
 F 0 "D18" V 8396 1380 50  0000 R CNN
@@ -1078,7 +966,7 @@ F 3 "" H 8050 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D16
+L pcb-rescue:D_Small-Device D16
 U 1 1 5F75FC09
 P 7300 2400
 F 0 "D16" V 7346 2330 50  0000 R CNN
@@ -1100,7 +988,7 @@ F 3 "" H 7000 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D15
+L pcb-rescue:D_Small-Device D15
 U 1 1 5F71E070
 P 7300 1950
 F 0 "D15" V 7346 1880 50  0000 R CNN
@@ -1111,7 +999,7 @@ F 3 "~" V 7300 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D14
+L pcb-rescue:D_Small-Device D14
 U 1 1 5F71E06A
 P 7300 1450
 F 0 "D14" V 7346 1380 50  0000 R CNN
@@ -1122,7 +1010,7 @@ F 3 "~" V 7300 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D13
+L pcb-rescue:D_Small-Device D13
 U 1 1 5F71E064
 P 7300 950
 F 0 "D13" V 7346 880 50  0000 R CNN
@@ -1166,7 +1054,7 @@ F 3 "" H 7000 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D12
+L pcb-rescue:D_Small-Device D12
 U 1 1 5F65C0E5
 P 6550 1950
 F 0 "D12" V 6596 1880 50  0000 R CNN
@@ -1177,7 +1065,7 @@ F 3 "~" V 6550 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D11
+L pcb-rescue:D_Small-Device D11
 U 1 1 5F65C0DF
 P 6550 1450
 F 0 "D11" V 6596 1380 50  0000 R CNN
@@ -1188,7 +1076,7 @@ F 3 "~" V 6550 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D10
+L pcb-rescue:D_Small-Device D10
 U 1 1 5F65C0D9
 P 6550 950
 F 0 "D10" V 6596 880 50  0000 R CNN
@@ -1232,7 +1120,7 @@ F 3 "" H 6250 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D9
+L pcb-rescue:D_Small-Device D9
 U 1 1 5F65C0C1
 P 5800 1950
 F 0 "D9" V 5846 1880 50  0000 R CNN
@@ -1243,7 +1131,7 @@ F 3 "~" V 5800 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D8
+L pcb-rescue:D_Small-Device D8
 U 1 1 5F65C0BB
 P 5800 1450
 F 0 "D8" V 5846 1380 50  0000 R CNN
@@ -1254,7 +1142,7 @@ F 3 "~" V 5800 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D7
+L pcb-rescue:D_Small-Device D7
 U 1 1 5F65C0B5
 P 5800 950
 F 0 "D7" V 5846 880 50  0000 R CNN
@@ -1298,7 +1186,7 @@ F 3 "" H 5500 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D6
+L pcb-rescue:D_Small-Device D6
 U 1 1 5F65369B
 P 5050 1950
 F 0 "D6" V 5096 1880 50  0000 R CNN
@@ -1309,7 +1197,7 @@ F 3 "~" V 5050 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D5
+L pcb-rescue:D_Small-Device D5
 U 1 1 5F6531F1
 P 5050 1450
 F 0 "D5" V 5096 1380 50  0000 R CNN
@@ -1320,7 +1208,7 @@ F 3 "~" V 5050 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D4
+L pcb-rescue:D_Small-Device D4
 U 1 1 5F652B59
 P 5050 950
 F 0 "D4" V 5096 880 50  0000 R CNN
@@ -1364,7 +1252,7 @@ F 3 "" H 4750 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D3
+L pcb-rescue:D_Small-Device D3
 U 1 1 5F6381E4
 P 4300 1950
 F 0 "D3" V 4346 1880 50  0000 R CNN
@@ -1375,7 +1263,7 @@ F 3 "~" V 4300 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D2
+L pcb-rescue:D_Small-Device D2
 U 1 1 5F637DD4
 P 4300 1450
 F 0 "D2" V 4346 1380 50  0000 R CNN
@@ -1386,7 +1274,7 @@ F 3 "~" V 4300 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Small D1
+L pcb-rescue:D_Small-Device D1
 U 1 1 5F63726E
 P 4300 950
 F 0 "D1" V 4346 880 50  0000 R CNN
@@ -1397,7 +1285,7 @@ F 3 "~" V 4300 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R9
+L pcb-rescue:R_Small-Device R9
 U 1 1 5F5E2313
 P 6400 3600
 F 0 "R9" H 6459 3646 50  0000 L CNN
@@ -1408,7 +1296,7 @@ F 3 "~" H 6400 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R8
+L pcb-rescue:R_Small-Device R8
 U 1 1 5F5D94D2
 P 6300 3600
 F 0 "R8" H 6241 3554 50  0000 R CNN
@@ -1419,7 +1307,7 @@ F 3 "~" H 6300 3600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0117
+L pcb-rescue:GND-power #PWR0117
 U 1 1 5F567569
 P 6400 4200
 F 0 "#PWR0117" H 6400 3950 50  0001 C CNN
@@ -1474,7 +1362,7 @@ F 3 "" H 4000 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:SRV05-4 U3
+L pcb-rescue:SRV05-4-Power_Protection U3
 U 1 1 5F531188
 P 3500 6350
 F 0 "U3" V 3454 6894 50  0000 L CNN
@@ -1485,7 +1373,7 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 3500 6350 50  0001 C 
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R5
+L pcb-rescue:R_Small-Device R5
 U 1 1 5F5220F0
 P 2400 5850
 F 0 "R5" V 2204 5850 50  0000 C CNN
@@ -1496,7 +1384,7 @@ F 3 "~" H 2400 5850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R4
+L pcb-rescue:R_Small-Device R4
 U 1 1 5F51498C
 P 2200 5950
 F 0 "R4" V 2004 5950 50  0000 C CNN
@@ -1507,7 +1395,7 @@ F 3 "~" H 2200 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
+L pcb-rescue:USB_C_Receptacle_USB2.0-Connector J1
 U 1 1 5F4F6E94
 P 1400 6250
 F 0 "J1" H 1507 7117 50  0000 C CNN
@@ -1518,7 +1406,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1550 62
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C11
+L pcb-rescue:C_Small-Device C11
 U 1 1 5F5F051C
 P 4800 4000
 F 0 "C11" H 4892 4046 50  0000 L CNN
@@ -1529,7 +1417,7 @@ F 3 "~" H 4800 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:DTC123J Q1
+L pcb-rescue:DTC123J-Transistor_BJT Q1
 U 1 1 5F5EEF62
 P 4100 4100
 F 0 "Q1" H 4288 4146 50  0000 L CNN
@@ -1540,7 +1428,7 @@ F 3 "" H 4100 4100 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R3
+L pcb-rescue:R_Small-Device R3
 U 1 1 5F5CAFCF
 P 4600 3450
 F 0 "R3" H 4659 3496 50  0000 L CNN
@@ -1551,7 +1439,7 @@ F 3 "~" H 4600 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C10
+L pcb-rescue:C_Small-Device C10
 U 1 1 5F5C8901
 P 4250 3450
 F 0 "C10" H 4342 3496 50  0000 L CNN
@@ -1562,7 +1450,7 @@ F 3 "~" H 4250 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D35
+L pcb-rescue:D_Small-Device D35
 U 1 1 5F5C8048
 P 4000 3350
 F 0 "D35" H 4000 3143 50  0000 C CNN
@@ -1573,7 +1461,7 @@ F 3 "~" V 4000 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L pcb-rescue:SW_Push-Switch SW1
 U 1 1 5F5BA10D
 P 3600 3350
 F 0 "SW1" H 3600 3635 50  0000 C CNN
@@ -1584,7 +1472,7 @@ F 3 "~" H 3600 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0104
+L pcb-rescue:+5V-power #PWR0104
 U 1 1 5F5A4D45
 P 650 1000
 F 0 "#PWR0104" H 650 850 50  0001 C CNN
@@ -1595,7 +1483,7 @@ F 3 "" H 650 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R2
+L pcb-rescue:R_Small-Device R2
 U 1 1 5F5A437D
 P 2200 1250
 F 0 "R2" H 2259 1296 50  0000 L CNN
@@ -1606,7 +1494,7 @@ F 3 "~" H 2200 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R1
+L pcb-rescue:R_Small-Device R1
 U 1 1 5F5A033B
 P 650 1250
 F 0 "R1" H 709 1296 50  0000 L CNN
@@ -1617,7 +1505,7 @@ F 3 "~" H 650 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D34
+L pcb-rescue:D_Schottky-Device D34
 U 1 1 5F58FA77
 P 1400 750
 F 0 "D34" H 1400 967 50  0000 C CNN
@@ -1628,7 +1516,7 @@ F 3 "~" H 1400 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:MCP1700-3002E_SOT23 U2
+L pcb-rescue:MCP1700-3002E_SOT23-Regulator_Linear U2
 U 1 1 5F5915D7
 P 1400 1150
 F 0 "U2" H 1400 1392 50  0000 C CNN
@@ -1639,7 +1527,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 1400 1150 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L pcb-rescue:C_Small-Device C8
 U 1 1 5F594437
 P 1900 1250
 F 0 "C8" H 1992 1296 50  0000 L CNN
@@ -1650,7 +1538,7 @@ F 3 "~" H 1900 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C9
+L pcb-rescue:C_Small-Device C9
 U 1 1 5F594AB1
 P 900 1250
 F 0 "C9" H 992 1296 50  0000 L CNN
@@ -1661,7 +1549,7 @@ F 3 "~" H 900 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C7
+L pcb-rescue:C_Small-Device C7
 U 1 1 5F51D934
 P 2400 3900
 F 0 "C7" H 2492 3946 50  0000 L CNN
@@ -1672,7 +1560,7 @@ F 3 "~" H 2400 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C6
+L pcb-rescue:C_Small-Device C6
 U 1 1 5F51D200
 P 2100 3900
 F 0 "C6" H 2192 3946 50  0000 L CNN
@@ -1683,7 +1571,7 @@ F 3 "~" H 2100 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
+L pcb-rescue:C_Small-Device C5
 U 1 1 5F51CCA6
 P 2100 4200
 F 0 "C5" H 2192 4246 50  0000 L CNN
@@ -1694,7 +1582,7 @@ F 3 "~" H 2100 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L pcb-rescue:C_Small-Device C4
 U 1 1 5F51C638
 P 1700 3900
 F 0 "C4" H 1792 3946 50  0000 L CNN
@@ -1705,7 +1593,7 @@ F 3 "~" H 1700 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L pcb-rescue:C_Small-Device C3
 U 1 1 5F51C187
 P 1700 4200
 F 0 "C3" H 1792 4246 50  0000 L CNN
@@ -1716,7 +1604,7 @@ F 3 "~" H 1700 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L pcb-rescue:C_Small-Device C2
 U 1 1 5F51BC88
 P 1300 4200
 F 0 "C2" H 1392 4246 50  0000 L CNN
@@ -1727,7 +1615,7 @@ F 3 "~" H 1300 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L pcb-rescue:C_Small-Device C1
 U 1 1 5F518E99
 P 1300 3900
 F 0 "C1" H 1392 3946 50  0000 L CNN
@@ -1743,7 +1631,7 @@ Wire Wire Line
 	2950 6350 3000 6350
 Connection ~ 2400 5650
 $Comp
-L power:+3.3V #PWR0101
+L pcb-rescue:+3.3V-power #PWR0101
 U 1 1 5F85A024
 P 5800 3500
 F 0 "#PWR0101" H 5800 3350 50  0001 C CNN
@@ -1754,7 +1642,7 @@ F 3 "" H 5800 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0106
+L pcb-rescue:+3.3V-power #PWR0106
 U 1 1 5F85A723
 P 5800 4050
 F 0 "#PWR0106" H 5800 3900 50  0001 C CNN
@@ -1765,7 +1653,7 @@ F 3 "" H 5800 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0107
+L pcb-rescue:+3.3V-power #PWR0107
 U 1 1 5F85AEF1
 P 1150 3800
 F 0 "#PWR0107" H 1150 3650 50  0001 C CNN
@@ -1777,7 +1665,7 @@ F 3 "" H 1150 3800 50  0001 C CNN
 $EndComp
 Connection ~ 1150 3800
 $Comp
-L power:+3.3V #PWR0108
+L pcb-rescue:+3.3V-power #PWR0108
 U 1 1 5F85BCED
 P 2200 1000
 F 0 "#PWR0108" H 2200 850 50  0001 C CNN
@@ -1788,7 +1676,7 @@ F 3 "" H 2200 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0115
+L pcb-rescue:+3.3V-power #PWR0115
 U 1 1 5F85C7B9
 P 3200 3350
 F 0 "#PWR0115" H 3200 3200 50  0001 C CNN
@@ -1799,7 +1687,7 @@ F 3 "" H 3200 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0118
+L pcb-rescue:+3.3V-power #PWR0118
 U 1 1 5F85D240
 P 9500 3050
 F 0 "#PWR0118" H 9500 2900 50  0001 C CNN
@@ -1822,7 +1710,7 @@ Wire Wire Line
 Wire Wire Line
 	900  1150 1100 1150
 $Comp
-L power:PWR_FLAG #FLG0101
+L pcb-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5F8E130B
 P 5950 6500
 F 0 "#FLG0101" H 5950 6575 50  0001 C CNN
@@ -1833,7 +1721,7 @@ F 3 "~" H 5950 6500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0102
+L pcb-rescue:PWR_FLAG-power #FLG0102
 U 1 1 5F8E1AD4
 P 5950 6600
 F 0 "#FLG0102" H 5950 6675 50  0001 C CNN
@@ -1844,7 +1732,7 @@ F 3 "~" H 5950 6600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0103
+L pcb-rescue:PWR_FLAG-power #FLG0103
 U 1 1 5F8E1F68
 P 5950 6700
 F 0 "#FLG0103" H 5950 6775 50  0001 C CNN
@@ -1855,7 +1743,7 @@ F 3 "~" H 5950 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0119
+L pcb-rescue:GND-power #PWR0119
 U 1 1 5F8E351C
 P 5950 6500
 F 0 "#PWR0119" H 5950 6250 50  0001 C CNN
@@ -1866,7 +1754,7 @@ F 3 "" H 5950 6500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VDD #PWR0123
+L pcb-rescue:VDD-power #PWR0123
 U 1 1 5F8E45B3
 P 5950 6600
 F 0 "#PWR0123" H 5950 6450 50  0001 C CNN
@@ -1877,7 +1765,7 @@ F 3 "" H 5950 6600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR0125
+L pcb-rescue:VCC-power #PWR0125
 U 1 1 5F8E55E1
 P 5950 6800
 F 0 "#PWR0125" H 5950 6650 50  0001 C CNN
@@ -1888,7 +1776,7 @@ F 3 "" H 5950 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0104
+L pcb-rescue:PWR_FLAG-power #FLG0104
 U 1 1 5F8E24CB
 P 5950 6800
 F 0 "#FLG0104" H 5950 6875 50  0001 C CNN
@@ -1899,7 +1787,7 @@ F 3 "~" H 5950 6800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0124
+L pcb-rescue:+5V-power #PWR0124
 U 1 1 5F8E4F1D
 P 5950 6700
 F 0 "#PWR0124" H 5950 6550 50  0001 C CNN
@@ -1910,10 +1798,10 @@ F 3 "" H 5950 6700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L pcb-rescue:VCC-power #PWR0126
 U 1 1 5F90AF3D
 P 2050 5650
-F 0 "#PWR?" H 2050 5500 50  0001 C CNN
+F 0 "#PWR0126" H 2050 5500 50  0001 C CNN
 F 1 "VCC" H 2065 5823 50  0000 C CNN
 F 2 "" H 2050 5650 50  0001 C CNN
 F 3 "" H 2050 5650 50  0001 C CNN
@@ -1923,4 +1811,116 @@ $EndComp
 Connection ~ 2050 5650
 Wire Wire Line
 	2050 5650 2100 5650
+Wire Wire Line
+	10150 3050 10050 3050
+Connection ~ 10050 3050
+Wire Wire Line
+	10050 6050 10300 6050
+Connection ~ 10050 6050
+Wire Wire Line
+	10050 3050 9950 3050
+Connection ~ 9950 3050
+Wire Wire Line
+	10050 6050 9950 6050
+Connection ~ 9950 6050
+Wire Wire Line
+	9950 6050 9850 6050
+Wire Wire Line
+	9850 6050 9750 6050
+Connection ~ 9850 6050
+Wire Wire Line
+	9950 3050 9850 3050
+Connection ~ 9850 3050
+Wire Wire Line
+	9500 3050 9750 3050
+Wire Wire Line
+	9850 3050 9750 3050
+Connection ~ 9750 3050
+$Comp
+L pcb-rescue:STM32F072CBTx-MCU_ST_STM32F0 U1
+U 1 1 5F50F3BB
+P 9950 4550
+F 0 "U1" H 9900 2961 50  0000 C CNN
+F 1 "STM32F072CBTx" H 9900 2870 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 9350 3150 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 9950 4550 50  0001 C CNN
+	1    9950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcb-rescue:D_Small-Device D33
+U 1 1 5FA3C57C
+P 3200 1750
+F 0 "D33" V 3246 1680 50  0000 R CNN
+F 1 "SOD_123" V 3155 1680 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 3200 1750 50  0001 C CNN
+F 3 "~" V 3200 1750 50  0001 C CNN
+	1    3200 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 2500 7300 2500
+Wire Wire Line
+	3200 1650 3200 1550
+Connection ~ 3200 1550
+Wire Wire Line
+	3200 1550 3000 1550
+Wire Wire Line
+	3200 1850 3200 2150
+Wire Wire Line
+	3200 2150 2650 2150
+Wire Wire Line
+	3700 1850 3700 2350
+Wire Wire Line
+	2650 1950 6700 1950
+Connection ~ 6700 1950
+Wire Wire Line
+	6700 1950 6700 2300
+Text GLabel 10550 4650 2    50   Input ~ 0
+col0
+Text GLabel 10550 4750 2    50   Input ~ 0
+col1
+Text GLabel 10550 4850 2    50   Input ~ 0
+col2
+Text GLabel 10550 4950 2    50   Input ~ 0
+col3
+Text GLabel 10550 5050 2    50   Input ~ 0
+col4
+Text GLabel 9250 5350 0    50   Input ~ 0
+row0
+Text GLabel 9250 4550 0    50   Input ~ 0
+row1
+Text GLabel 9250 4450 0    50   Input ~ 0
+row2
+Text GLabel 9250 4350 0    50   Input ~ 0
+row3
+Text GLabel 10550 5750 2    50   Input ~ 0
+col5
+Text GLabel 10550 5850 2    50   Input ~ 0
+col6
+Text GLabel 9250 4650 0    50   Input ~ 0
+col7
+Text GLabel 9250 4750 0    50   Input ~ 0
+col8
+Text GLabel 9250 4850 0    50   Input ~ 0
+col9
+NoConn ~ 9250 3650
+NoConn ~ 9250 3750
+NoConn ~ 9250 3950
+NoConn ~ 9250 4050
+NoConn ~ 9250 4150
+NoConn ~ 9250 4950
+NoConn ~ 9250 5050
+NoConn ~ 9250 5450
+NoConn ~ 9250 5550
+NoConn ~ 9250 5650
+NoConn ~ 9250 5750
+NoConn ~ 9250 5850
+NoConn ~ 10550 5650
+NoConn ~ 10550 5350
+NoConn ~ 10550 5250
+NoConn ~ 10550 5150
+NoConn ~ 10550 4550
+NoConn ~ 10550 4450
+NoConn ~ 10550 4350
 $EndSCHEMATC

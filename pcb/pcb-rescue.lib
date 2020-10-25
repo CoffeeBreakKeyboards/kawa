@@ -1,42 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# kbd_OLED
+# +3.3V-power
 #
-DEF kbd_OLED OL 0 40 Y Y 1 F N
-F0 "OL" 0 100 51 H V C CNN
-F1 "kbd_OLED" 0 -50 47 H V C CNN
-F2 "" 0 100 60 H I C CNN
-F3 "" 0 100 60 H I C CNN
-DRAW
-S -550 350 600 -300 0 1 0 N
-X SDA 1 -750 250 200 R 50 50 1 1 B
-X SCL 2 -750 100 200 R 50 50 1 1 B
-X VCC 3 -750 -50 200 R 50 50 1 1 W
-X GND 4 -750 -200 200 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# kbd_SW_PUSH
-#
-DEF kbd_SW_PUSH SW 0 40 N N 1 F N
-F0 "SW" 150 110 50 H V C CNN
-F1 "kbd_SW_PUSH" 0 -80 50 H V C CNN
-F2 "" 0 0 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
-DRAW
-S -170 50 170 60 0 1 0 N
-P 4 0 1 0 -40 60 -30 90 30 90 40 60 N
-X 1 1 -300 0 200 R 50 50 0 1 P I
-X 2 2 300 0 200 L 50 50 0 1 P I
-ENDDRAW
-ENDDEF
-#
-# pcb-rescue_+3.3V-power
-#
-DEF pcb-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+DEF +3.3V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_+3.3V-power" 0 140 50 H V C CNN
+F1 "+3.3V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -47,11 +16,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_+5V-power
+# +5V-power
 #
-DEF pcb-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+DEF +5V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_+5V-power" 0 140 50 H V C CNN
+F1 "+5V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -62,11 +31,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_C_Small-Device
+# C_Small-Device
 #
-DEF pcb-rescue_C_Small-Device C 0 10 N N 1 F N
+DEF C_Small-Device C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "pcb-rescue_C_Small-Device" 10 -80 50 H V L CNN
+F1 "C_Small-Device" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -80,11 +49,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_DTC123J-Transistor_BJT
+# DTC123J-Transistor_BJT
 #
-DEF pcb-rescue_DTC123J-Transistor_BJT Q 0 0 Y N 1 F N
+DEF DTC123J-Transistor_BJT Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "pcb-rescue_DTC123J-Transistor_BJT" 200 0 50 H V L CNN
+F1 "DTC123J-Transistor_BJT" 200 0 50 H V L CNN
 F2 "" 0 0 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -114,11 +83,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_D_Schottky-Device
+# D_Schottky-Device
 #
-DEF pcb-rescue_D_Schottky-Device D 0 40 N N 1 F N
+DEF D_Schottky-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "pcb-rescue_D_Schottky-Device" 0 -100 50 H V C CNN
+F1 "D_Schottky-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -136,11 +105,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_D_Small-Device
+# D_Small-Device
 #
-DEF pcb-rescue_D_Small-Device D 0 10 N N 1 F N
+DEF D_Small-Device D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "pcb-rescue_D_Small-Device" -150 -80 50 H V L CNN
+F1 "D_Small-Device" -150 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -158,11 +127,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_D_TVS-Device
+# D_TVS-Device
 #
-DEF pcb-rescue_D_TVS-Device D 0 40 N N 1 F N
+DEF D_TVS-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "pcb-rescue_D_TVS-Device" 0 -100 50 H V C CNN
+F1 "D_TVS-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -180,11 +149,11 @@ X A2 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_GND-power
+# GND-power
 #
-DEF pcb-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "pcb-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -193,11 +162,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_MCP1700-3002E_SOT23-Regulator_Linear
+# MCP1700-3002E_SOT23-Regulator_Linear
 #
-DEF pcb-rescue_MCP1700-3002E_SOT23-Regulator_Linear U 0 10 Y Y 1 F N
+DEF MCP1700-3002E_SOT23-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "pcb-rescue_MCP1700-3002E_SOT23-Regulator_Linear" 0 125 50 H V L CNN
+F1 "MCP1700-3002E_SOT23-Regulator_Linear" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -211,11 +180,11 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_PWR_FLAG-power
+# PWR_FLAG-power
 #
-DEF pcb-rescue_PWR_FLAG-power #FLG 0 0 N N 1 F P
+DEF PWR_FLAG-power #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "pcb-rescue_PWR_FLAG-power" 0 150 50 H V C CNN
+F1 "PWR_FLAG-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -224,11 +193,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Polyfuse-Device
+# Polyfuse-Device
 #
-DEF pcb-rescue_Polyfuse-Device F 0 0 N Y 1 F N
+DEF Polyfuse-Device F 0 0 N Y 1 F N
 F0 "F" -100 0 50 V V C CNN
-F1 "pcb-rescue_Polyfuse-Device" 100 0 50 V V C CNN
+F1 "Polyfuse-Device" 100 0 50 V V C CNN
 F2 "" 50 -200 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -244,11 +213,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_R_Small-Device
+# R_Small-Device
 #
-DEF pcb-rescue_R_Small-Device R 0 10 N N 1 F N
+DEF R_Small-Device R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "pcb-rescue_R_Small-Device" 30 -40 50 H V L CNN
+F1 "R_Small-Device" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -261,11 +230,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Rotary_Encoder_Switch-Device
+# Rotary_Encoder_Switch-Device
 #
-DEF pcb-rescue_Rotary_Encoder_Switch-Device SW 0 10 Y N 1 F N
+DEF Rotary_Encoder_Switch-Device SW 0 10 Y N 1 F N
 F0 "SW" 0 260 50 H V C CNN
-F1 "pcb-rescue_Rotary_Encoder_Switch-Device" 0 -260 50 H V C CNN
+F1 "Rotary_Encoder_Switch-Device" 0 -260 50 H V C CNN
 F2 "" -150 160 50 H I C CNN
 F3 "" 0 260 50 H I C CNN
 $FPLIST
@@ -299,11 +268,11 @@ X S2 S2 300 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_SRV05-4-Power_Protection
+# SRV05-4-Power_Protection
 #
-DEF pcb-rescue_SRV05-4-Power_Protection U 0 0 Y Y 1 F N
+DEF SRV05-4-Power_Protection U 0 0 Y Y 1 F N
 F0 "U" -200 450 50 H V R CNN
-F1 "pcb-rescue_SRV05-4-Power_Protection" 100 450 50 H V L CNN
+F1 "SRV05-4-Power_Protection" 100 450 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-6" 700 -450 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -356,11 +325,11 @@ X IO4 6 500 -100 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_STM32F072CBTx-MCU_ST_STM32F0
+# STM32F072CBTx-MCU_ST_STM32F0
 #
-DEF pcb-rescue_STM32F072CBTx-MCU_ST_STM32F0 U 0 20 Y Y 1 F N
+DEF STM32F072CBTx-MCU_ST_STM32F0 U 0 20 Y Y 1 F N
 F0 "U" -600 1450 50 H V L CNN
-F1 "pcb-rescue_STM32F072CBTx-MCU_ST_STM32F0" 300 1450 50 H V L CNN
+F1 "STM32F072CBTx-MCU_ST_STM32F0" 300 1450 50 H V L CNN
 F2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" -600 -1400 50 H I R CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -419,11 +388,11 @@ X VDDA 9 100 1500 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_SW_Push-Switch
+# SW_Push-Switch
 #
-DEF pcb-rescue_SW_Push-Switch SW 0 40 N N 1 F N
+DEF SW_Push-Switch SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "pcb-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
+F1 "SW_Push-Switch" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -436,11 +405,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_USB_C_Receptacle_USB2.0-Connector
+# USB_C_Receptacle_USB2.0-Connector
 #
-DEF pcb-rescue_USB_C_Receptacle_USB2.0-Connector J 0 40 Y Y 1 F N
+DEF USB_C_Receptacle_USB2.0-Connector J 0 40 Y Y 1 F N
 F0 "J" -400 750 50 H V L CNN
-F1 "pcb-rescue_USB_C_Receptacle_USB2.0-Connector" 750 750 50 H V R CNN
+F1 "USB_C_Receptacle_USB2.0-Connector" 750 750 50 H V R CNN
 F2 "" 150 0 50 H I C CNN
 F3 "" 150 0 50 H I C CNN
 $FPLIST
@@ -494,11 +463,11 @@ X SHIELD S1 -300 -900 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_VCC-power
+# VCC-power
 #
-DEF pcb-rescue_VCC-power #PWR 0 0 Y Y 1 F P
+DEF VCC-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_VCC-power" 0 150 50 H V C CNN
+F1 "VCC-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -509,11 +478,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_VDD-power
+# VDD-power
 #
-DEF pcb-rescue_VDD-power #PWR 0 0 Y Y 1 F P
+DEF VDD-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_VDD-power" 0 150 50 H V C CNN
+F1 "VDD-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
