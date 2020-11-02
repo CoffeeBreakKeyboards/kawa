@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# pcb-rescue_D_Small-Device
+# D_Small-Device
 #
-DEF pcb-rescue_D_Small-Device D 0 10 N N 1 F N
+DEF D_Small-Device D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "pcb-rescue_D_Small-Device" -150 -80 50 H V L CNN
+F1 "D_Small-Device" -150 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -23,11 +23,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_GND-power
+# GND-power
 #
-DEF pcb-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "pcb-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -36,11 +36,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_OLED-kbd
+# OLED-kbd
 #
-DEF pcb-rescue_OLED-kbd OL 0 40 Y Y 1 F N
+DEF OLED-kbd OL 0 40 Y Y 1 F N
 F0 "OL" 0 100 51 H V C CNN
-F1 "pcb-rescue_OLED-kbd" 0 -50 47 H V C CNN
+F1 "OLED-kbd" 0 -50 47 H V C CNN
 F2 "" 0 100 60 H I C CNN
 F3 "" 0 100 60 H I C CNN
 DRAW
@@ -52,11 +52,11 @@ X GND 4 -750 -200 200 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_ProMicro-kbd
+# ProMicro-kbd
 #
-DEF pcb-rescue_ProMicro-kbd U 0 40 Y Y 1 F N
+DEF ProMicro-kbd U 0 40 Y Y 1 F N
 F0 "U" 0 950 60 H V C CNN
-F1 "pcb-rescue_ProMicro-kbd" 0 -550 60 H V C CNN
+F1 "ProMicro-kbd" 0 -550 60 H V C CNN
 F2 "" 100 -1050 60 H V C CNN
 F3 "" 100 -1050 60 H V C CNN
 DRAW
@@ -88,11 +88,11 @@ X 6/D7 9 -700 -50 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_R_Small-Device
+# R_Small-Device
 #
-DEF pcb-rescue_R_Small-Device R 0 10 N N 1 F N
+DEF R_Small-Device R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "pcb-rescue_R_Small-Device" 30 -40 50 H V L CNN
+F1 "R_Small-Device" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -105,11 +105,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Rotary_Encoder_Switch-Device
+# Rotary_Encoder_Switch-Device
 #
-DEF pcb-rescue_Rotary_Encoder_Switch-Device SW 0 10 Y N 1 F N
+DEF Rotary_Encoder_Switch-Device SW 0 10 Y N 1 F N
 F0 "SW" 0 260 50 H V C CNN
-F1 "pcb-rescue_Rotary_Encoder_Switch-Device" 0 -260 50 H V C CNN
+F1 "Rotary_Encoder_Switch-Device" 0 -260 50 H V C CNN
 F2 "" -150 160 50 H I C CNN
 F3 "" 0 260 50 H I C CNN
 $FPLIST
@@ -143,11 +143,11 @@ X S2 S2 300 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_SW_PUSH-kbd
+# SW_PUSH-kbd
 #
-DEF pcb-rescue_SW_PUSH-kbd SW 0 40 N N 1 F N
+DEF SW_PUSH-kbd SW 0 40 N N 1 F N
 F0 "SW" 150 110 50 H V C CNN
-F1 "pcb-rescue_SW_PUSH-kbd" 0 -80 50 H V C CNN
+F1 "SW_PUSH-kbd" 0 -80 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -158,11 +158,11 @@ X 2 2 300 0 200 L 50 50 0 1 P I
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_VCC-power
+# VCC-power
 #
-DEF pcb-rescue_VCC-power #PWR 0 0 Y Y 1 F P
+DEF VCC-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_VCC-power" 0 150 50 H V C CNN
+F1 "VCC-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
