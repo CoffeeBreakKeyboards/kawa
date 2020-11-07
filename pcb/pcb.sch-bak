@@ -13,40 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L pcb-rescue:OLED-kbd OL1
-U 1 1 5F3A39E2
-P 3300 3300
-F 0 "OL1" H 3928 3369 51  0000 L CNN
-F 1 "OLED" H 3928 3279 47  0000 L CNN
-F 2 "kbd:OLED_1side" H 3300 3400 60  0001 C CNN
-F 3 "" H 3300 3400 60  0001 C CNN
-	1    3300 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L pcb-rescue:GND-power #PWR0115
-U 1 1 5F4567A6
-P 1750 3500
-F 0 "#PWR0115" H 1750 3250 50  0001 C CNN
-F 1 "GND" H 1755 3327 50  0000 C CNN
-F 2 "" H 1750 3500 50  0001 C CNN
-F 3 "" H 1750 3500 50  0001 C CNN
-	1    1750 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1750 3500 2550 3500
-Wire Wire Line
-	2550 3350 1750 3350
-Text GLabel 2150 3200 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	2550 3200 2150 3200
-Text GLabel 2150 3050 0    50   Input ~ 0
+	2650 3300 1850 3300
+Text GLabel 2250 3100 0    50   Input ~ 0
 SDA
-Wire Wire Line
-	2150 3050 2550 3050
 $Comp
 L pcb-rescue:SW_PUSH-kbd SW1
 U 1 1 5F48523A
@@ -399,21 +369,6 @@ F 3 "" H 8500 2250 50  0000 C CNN
 	1    8500 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L pcb-rescue:GND-power #PWR0119
-U 1 1 5F58185D
-P 4500 3600
-F 0 "#PWR0119" H 4500 3350 50  0001 C CNN
-F 1 "GND" H 4505 3427 50  0000 C CNN
-F 2 "" H 4500 3600 50  0001 C CNN
-F 3 "" H 4500 3600 50  0001 C CNN
-	1    4500 3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 4400 3400 3    50   Input ~ 0
-S0
-Text GLabel 4600 3400 3    50   Input ~ 0
-S1
 $Comp
 L pcb-rescue:D_Small-Device D11
 U 1 1 5F3D080E
@@ -847,8 +802,6 @@ Wire Wire Line
 	5150 1800 5150 2250
 Connection ~ 5150 2250
 Wire Wire Line
-	5150 2250 5150 2600
-Wire Wire Line
 	6000 1000 6000 1350
 Connection ~ 6000 1350
 Wire Wire Line
@@ -1031,8 +984,6 @@ Text GLabel 3750 1000 1    50   Input ~ 0
 COL2
 Text GLabel 1950 2550 3    50   Input ~ 0
 ROW2
-Text GLabel 1750 4800 0    50   Input ~ 0
-S0
 Wire Wire Line
 	1750 5100 1750 5000
 $Comp
@@ -1093,8 +1044,6 @@ Wire Wire Line
 	2800 4150 3000 4150
 Text GLabel 2200 4150 0    50   Input ~ 0
 reset
-Text GLabel 1750 4900 0    50   Input ~ 0
-S1
 Text GLabel 1750 5800 0    50   Input ~ 0
 COL4
 Text GLabel 1750 5700 0    50   Input ~ 0
@@ -1103,7 +1052,7 @@ Text GLabel 1750 5600 0    50   Input ~ 0
 COL2
 Text GLabel 1750 5500 0    50   Input ~ 0
 COL1
-Text GLabel 1750 5400 0    50   Input ~ 0
+Text GLabel 1750 5900 0    50   Input ~ 0
 COL0
 Text GLabel 3150 5900 2    50   Input ~ 0
 ROW3
@@ -1124,7 +1073,7 @@ F 3 "" H 600 5100 50  0001 C CNN
 	1    600  5100
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 5900 0    50   Input ~ 0
+Text GLabel 1750 5400 0    50   Input ~ 0
 ROW0
 Text GLabel 1150 5300 0    50   Input ~ 0
 SCL
@@ -1133,17 +1082,15 @@ SDA
 Wire Wire Line
 	6600 2950 5750 2950
 Connection ~ 5750 2950
-Wire Wire Line
-	5750 2950 5200 2950
 $Comp
 L pcb-rescue:VCC-power #PWR0105
 U 1 1 5FE47AAE
-P 1750 3350
-F 0 "#PWR0105" H 1750 3200 50  0001 C CNN
-F 1 "VCC" H 1767 3523 50  0000 C CNN
-F 2 "" H 1750 3350 50  0001 C CNN
-F 3 "" H 1750 3350 50  0001 C CNN
-	1    1750 3350
+P 1850 3300
+F 0 "#PWR0105" H 1850 3150 50  0001 C CNN
+F 1 "VCC" H 1867 3473 50  0000 C CNN
+F 2 "" H 1850 3300 50  0001 C CNN
+F 3 "" H 1850 3300 50  0001 C CNN
+	1    1850 3300
 	1    0    0    -1  
 $EndComp
 Connection ~ 1750 5100
@@ -1223,30 +1170,40 @@ COL8
 Text GLabel 3150 5600 2    50   Input ~ 0
 COL9
 $Comp
-L pcb-rescue:Rotary_Encoder_Switch-Device SW33
-U 1 1 5F50E358
-P 4500 3100
-F 0 "SW33" V 4546 2870 50  0000 R CNN
-F 1 "Rotary_Encoder_Switch" V 4455 2870 50  0000 R CNN
-F 2 "keebio-parts:RotaryEncoder_EC11" H 4350 3260 50  0001 C CNN
-F 3 "~" H 4500 3360 50  0001 C CNN
-	1    4500 3100
+L SSD1306-128x64_OLED:SSD1306 Brd1
+U 1 1 5FA7259A
+P 3000 3250
+F 0 "Brd1" V 3046 2972 50  0000 R CNN
+F 1 "SSD1306" V 2955 2972 50  0000 R CNN
+F 2 "SSD1306:128x64OLED" H 3000 3500 50  0001 C CNN
+F 3 "" H 3000 3500 50  0001 C CNN
+	1    3000 3250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4500 3400 4500 3600
+	2250 3100 2650 3100
+Text GLabel 2250 3200 0    50   Input ~ 0
+SCL
 Wire Wire Line
-	4600 2800 5200 2800
+	2650 3200 2250 3200
 Wire Wire Line
-	5200 2800 5200 2950
-Connection ~ 5200 2950
+	1850 3400 2650 3400
+$Comp
+L pcb-rescue:GND-power #PWR0115
+U 1 1 5F4567A6
+P 1850 3400
+F 0 "#PWR0115" H 1850 3150 50  0001 C CNN
+F 1 "GND" H 1855 3227 50  0000 C CNN
+F 2 "" H 1850 3400 50  0001 C CNN
+F 3 "" H 1850 3400 50  0001 C CNN
+	1    1850 3400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5200 2950 5100 2950
+	5150 2250 5150 2650
 Wire Wire Line
-	4400 2800 4400 2600
-Wire Wire Line
-	4400 2600 5150 2600
-Connection ~ 5150 2600
-Wire Wire Line
-	5150 2600 5150 2650
+	5100 2950 5750 2950
+NoConn ~ 1750 4800
+NoConn ~ 1750 4900
+NoConn ~ 3150 4800
 $EndSCHEMATC
